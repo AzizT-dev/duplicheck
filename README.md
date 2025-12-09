@@ -71,7 +71,11 @@ DupliCheck est un plugin QGIS permettant de détecter et de gérer les entités 
 - QGIS 3.22 ou supérieur  
 - Python 3.9 ou supérieur
 
-## Historique des versions
+## 🧾 Journal des versions
+
+| Version | Date       | Changements majeurs                                                                                   |
+| ------- | ---------- | ---------------------------------------------------------------------------------------------------- |
+| 1.0.0   | 2025-12-08 | Version initiale        |
 
 ### 1.0.0 (2025)
 - Première version publiée  
@@ -80,15 +84,58 @@ DupliCheck est un plugin QGIS permettant de détecter et de gérer les entités 
 
 Licence publique générale GNU v3.0
 
-## Auteur
+## 💬 Retours et contributions
 
-Aziz TRAORE  
-Email : aziz.explorer@gmail.com
+Vous pouvez :
+- 🐛 Signaler un bug via [GitHub Issues](https://github.com/AzizT-dev/duplicheck/issues)
+- 💡 Proposer des améliorations
+- 🌍 Contribuer aux traductions (FR | EN | ES | AR | DE | RU | ZH | PT | IT)
+- 📖 Améliorer la documentation
+- ⭐ Partager vos retours d'expérience
+- 🔧 Soumettre des Pull Requests
 
-## Contribution
+**Processus de contribution** :
+1. Fork le projet
+2. Créer une branche (`git checkout -b feature/AmazingFeature`)
+3. Commit vos changements (`git commit -m 'Add AmazingFeature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrir une Pull Request
 
-Les contributions sont les bienvenues ! N’hésitez pas à créer des issues ou à proposer des pull requests.
+---
 
-## Support
+## 📚 Documentation complète
 
-Pour les rapports de bugs ou demandes de fonctionnalités, utilisez les [Issues GitHub](https://github.com/AzizT-dev/duplicheck/issues).
+- 📘 [Guide utilisateur](docs/user_guide.md)
+- 🎓 [Guide de configuration](docs/config_guide.md)
+- 🔧 [Guide développeur](docs/developer_guide.md)
+- 🐛 [FAQ & Troubleshooting](docs/faq.md)
+
+---
+
+## 🙏 Remerciements
+
+Merci à la communauté QGIS pour l'API robuste et la documentation excellente.  
+Merci aux testeurs beta pour leurs retours précieux.  
+Merci aux utilisateurs pour leurs suggestions d'amélioration.
+
+---
+
+## 📊 Statistiques du projet
+
+![GitHub stars](https://img.shields.io/github/stars/AzizT-dev/kat_overlap?style=social)
+![GitHub forks](https://img.shields.io/github/forks/AzizT-dev/kat_overlap?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/AzizT-dev/kat_overlap?style=social)
+
+---
+
+**⭐ Si ce plugin vous est utile, n'oubliez pas de mettre une étoile sur GitHub !**
+
+---
+
+<div align="center">
+  
+### Développé par Aziz TRAORE
+
+**v1.0.0 - Décembre 2025**
+
+</div>
