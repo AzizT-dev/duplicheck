@@ -1,0 +1,55 @@
+[general]
+name=DupliCheck
+qgisMinimumVersion=3.22
+description=Interactive duplicate detection and management for vector layers (geometry and attributes)
+version=1.2.0
+author=Aziz TRAORE
+email=aziz.explorer@gmail.com
+
+about=DupliCheck is an advanced duplicate detection plugin that gives users full control over which features to keep or remove. Unlike QGIS native tools that automatically delete duplicates, DupliCheck presents results interactively, allowing informed decisions based on geometry visualization, attribute comparison, and configurable priority criteria.
+
+    Key Features:
+    • Detect geometric duplicates (exact match or with tolerance)
+    • Detect attribute duplicates (single or multiple fields)
+    • Group-based management (handles N duplicates, not just pairs)
+    • Interactive visualization on QGIS main canvas
+    • Configurable priority rules (date, completeness, area, FID)
+    • Confidence scoring for each duplicate group
+    • Export reports (CSV, Excel, GeoPackage)
+    • Snapshot/restore capability for safe operations
+    • Multi-language support (FR, ES, AR, RU, DE, IT, PT, ZH)
+
+tracker=https://github.com/kaborodev/duplicheck/issues
+repository=https://github.com/kaborodev/duplicheck
+homepage=https://kaborodev.com/plugins/duplicheck
+
+hasProcessingProvider=no
+tags=duplicates,quality control,data cleaning,geometry,attributes,QA,cadastre,mining
+
+category=Vector
+icon=resources/icons/duplicheck.png
+
+experimental=False
+deprecated=False
+
+changelog=
+    1.2.0 - Rebranding & Improvements
+    • Renamed from KAT DupliCheck to DupliCheck
+    • Fixed zoom for point geometries
+    • Removed embedded MapPreview - uses QGIS main canvas
+    • Improved highlight and zoom behavior
+    
+    1.1.1 - Bug fixes
+    • Fixed zoom not working for point features
+    • Removed deprecated QgsRectangle.setMinimal()
+    
+    1.0.0 - Initial release
+    • Geometric duplicate detection (exact + tolerance)
+    • Attribute duplicate detection (single/multi-field)
+    • Interactive group-based results
+    • Priority-based suggestions
+    • Export to CSV/Excel/GeoPackage
+    • Snapshot and restore
+    • i18n support (8 languages)
+
+translations=i18n

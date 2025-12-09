@@ -1,0 +1,33 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/plugins/duplicheck">
+        <!-- Icons -->
+        <file>resources/icons/duplicheck.png</file>
+        <file>resources/icons/config.png</file>
+        <file>resources/icons/results.png</file>
+        <file>resources/icons/stats.png</file>
+        <file>resources/icons/export.png</file>
+        <file>resources/icons/apply.png</file>
+        <file>resources/icons/restore.png</file>
+        <file>resources/icons/zoom.png</file>
+        <file>resources/icons/select_all.png</file>
+        <file>resources/icons/deselect_all.png</file>
+        <file>resources/icons/help.png</file>
+        <file>resources/icons/reset.png</file>
+        <file>resources/icons/close.png</file>
+        
+        <!-- Styles -->
+        <file>resources/styles/main.qss</file>
+        
+        <!-- Translations -->
+        <file>i18n/duplicheck_en.qm</file>
+        <file>i18n/duplicheck_fr.qm</file>
+        <file>i18n/duplicheck_es.qm</file>
+        <file>i18n/duplicheck_ar.qm</file>
+        <file>i18n/duplicheck_ru.qm</file>
+        <file>i18n/duplicheck_de.qm</file>
+        <file>i18n/duplicheck_it.qm</file>
+        <file>i18n/duplicheck_pt.qm</file>
+        <file>i18n/duplicheck_zh.qm</file>
+    </qresource>
+</RCC>
