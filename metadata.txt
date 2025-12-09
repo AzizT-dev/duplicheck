@@ -2,7 +2,7 @@
 name=DupliCheck
 qgisMinimumVersion=3.22
 description=Interactive duplicate detection and management for vector layers (geometry and attributes)
-version=1.2.0
+version=1.0.0
 author=Aziz TRAORE
 email=aziz.explorer@gmail.com
 
@@ -17,11 +17,11 @@ about=DupliCheck is an advanced duplicate detection plugin that gives users full
     • Confidence scoring for each duplicate group
     • Export reports (CSV, Excel, GeoPackage)
     • Snapshot/restore capability for safe operations
-    • Multi-language support (FR, ES, AR, RU, DE, IT, PT, ZH)
+    • Multi-language support (FR, EN, ES, AR, DE, RU, IT, PT, ZH)
 
-tracker=https://github.com/kaborodev/duplicheck/issues
-repository=https://github.com/kaborodev/duplicheck
-homepage=https://kaborodev.com/plugins/duplicheck
+tracker=https://github.com/AzizT-dev/duplicheck/issues
+repository=https://github.com/AzizT-dev/duplicheck
+homepage=https://github.com/AzizT-dev/duplicheck
 
 hasProcessingProvider=no
 tags=duplicates,quality control,data cleaning,geometry,attributes,QA,cadastre,mining
@@ -33,16 +33,6 @@ experimental=False
 deprecated=False
 
 changelog=
-    1.2.0 - Rebranding & Improvements
-    • Renamed from KAT DupliCheck to DupliCheck
-    • Fixed zoom for point geometries
-    • Removed embedded MapPreview - uses QGIS main canvas
-    • Improved highlight and zoom behavior
-    
-    1.1.1 - Bug fixes
-    • Fixed zoom not working for point features
-    • Removed deprecated QgsRectangle.setMinimal()
-    
     1.0.0 - Initial release
     • Geometric duplicate detection (exact + tolerance)
     • Attribute duplicate detection (single/multi-field)
@@ -50,6 +40,6 @@ changelog=
     • Priority-based suggestions
     • Export to CSV/Excel/GeoPackage
     • Snapshot and restore
-    • i18n support (8 languages)
+    • i18n support (9 languages: FR, EN, ES, AR, DE, RU, IT, PT, ZH)
 
 translations=i18n
