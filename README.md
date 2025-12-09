@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # duplicheck
 Plugin QGIS pour la détection et la gestion des doublons dans les couches vectorielles
 =======
@@ -8,7 +7,7 @@ Plugin QGIS pour la détection et la gestion des doublons dans les couches vecto
 
 ![QGIS](https://img.shields.io/badge/QGIS-3.22+-green.svg)
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
-![Version](https://img.shields.io/badge/Version-1.2.0-orange.svg)
+![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)
 
 ## Overview
 
