@@ -1,108 +1,94 @@
-# duplicheck
-Plugin QGIS pour la détection et la gestion des doublons dans les couches vectorielles
-=======
 # DupliCheck
 
-**Interactive Duplicate Detection and Management for QGIS**
+**Détection et gestion interactive des doublons pour QGIS**
 
 ![QGIS](https://img.shields.io/badge/QGIS-3.22+-green.svg)
 ![License](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)
 
-## Overview
+## Présentation
 
-DupliCheck is a QGIS plugin for detecting and managing duplicate features in vector layers. Unlike native QGIS tools that automatically delete duplicates, DupliCheck presents results interactively, allowing you to make informed decisions about which features to keep or remove.
+DupliCheck est un plugin QGIS permettant de détecter et de gérer les entités en doublon dans les couches vectorielles. Contrairement aux outils natifs de QGIS qui suppriment automatiquement les doublons, DupliCheck présente les résultats de manière interactive et vous permet de décider quelles entités conserver ou supprimer.
 
-## Features
+## Fonctionnalités
 
-- **Geometric duplicate detection** - Exact match or with configurable tolerance
-- **Attribute duplicate detection** - Single or multiple fields comparison
-- **Group-based management** - Handles N duplicates, not just pairs
-- **Interactive visualization** - Highlights on QGIS main canvas
-- **Click to zoom** - Single-click for highlight, double-click for zoom
-- **Configurable priority rules** - Date, completeness, area, FID-based
-- **Confidence scoring** - For each duplicate group
-- **Export reports** - CSV, Excel, GeoPackage formats
-- **Snapshot/restore** - Safe operations with undo capability
-- **Multi-language** - FR, ES, AR, RU, DE, IT, PT, ZH
+- **Détection de doublons géométriques** - Exacte ou avec tolérance configurable  
+- **Détection de doublons attributaires** - Comparaison sur un ou plusieurs champs  
+- **Gestion par groupes** - Prend en charge N doublons, pas seulement des paires  
+- **Visualisation interactive** - Mise en évidence sur la carte QGIS principale  
+- **Cliquez pour zoomer** - Un clic pour surligner, double-clic pour zoomer  
+- **Règles de priorité configurables** - Date, complétude, superficie, FID  
+- **Score de confiance** - Pour chaque groupe de doublons  
+- **Export de rapports** - Formats CSV, Excel, GeoPackage  
+- **Snapshot/restauration** - Opérations sûres avec possibilité d'annulation  
+- **Multilingue** - 9 langues disponibles : français, anglais, espagnol, arabe, allemand, russe, chinois, portugais, italien
 
 ## Installation
 
-### From ZIP file
+### Depuis le fichier ZIP
 
-1. Download the latest release ZIP file
-2. In QGIS: `Plugins` → `Manage and Install Plugins` → `Install from ZIP`
-3. Select the downloaded ZIP file
-4. Restart QGIS if needed
+1. Téléchargez la dernière version en ZIP  
+2. Dans QGIS : `Plugins` → `Gérer et installer des plugins` → `Installer depuis un ZIP`  
+3. Sélectionnez le fichier ZIP téléchargé  
+4. Redémarrez QGIS si nécessaire  
 
-### Manual installation
+### Installation manuelle
 
-1. Extract the ZIP to your QGIS plugins folder:
-   - Windows: `%APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\`
-   - Linux: `~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/`
-   - macOS: `~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/`
-2. Restart QGIS
-3. Enable the plugin in `Plugins` → `Manage and Install Plugins`
+1. Décompressez le ZIP dans le dossier des plugins QGIS :  
+   - Windows : `%APPDATA%\QGIS\QGIS3\profiles\default\python\plugins\`  
+   - Linux : `~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/`  
+   - macOS : `~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/`  
+2. Redémarrez QGIS  
+3. Activez le plugin dans `Plugins` → `Gérer et installer des plugins`
 
-## Usage
+## Utilisation
 
-### Basic workflow
+### Workflow de base
 
-1. **Open DupliCheck** from the Vector menu or toolbar
-2. **Select a layer** to analyze
-3. **Choose detection type**:
-   - Geometric: Finds features with identical or similar geometries
-   - Attribute: Finds features with matching attribute values
-4. **Configure options** (tolerance, fields to compare, etc.)
-5. **Run Detection**
-6. **Review results** in the Results tab
-7. **Click on features** to highlight and zoom on the map
-8. **Mark actions** (Keep/Remove) for each feature
-9. **Apply actions** to delete marked features
+1. **Ouvrir DupliCheck** depuis le menu Vectoriel ou la barre d’outils  
+2. **Sélectionner une couche** à analyser  
+3. **Choisir le type de détection** :  
+   - Géométrique : identifie les entités aux géométries identiques ou similaires  
+   - Attributaire : identifie les entités aux valeurs d’attributs correspondantes  
+4. **Configurer les options** (tolérance, champs à comparer, etc.)  
+5. **Lancer la détection**  
+6. **Consulter les résultats** dans l’onglet Résultats  
+7. **Cliquer sur les entités** pour les mettre en surbrillance et zoomer sur la carte  
+8. **Marquer les actions** (Keep/Remove) pour chaque entité  
+9. **Appliquer les actions** pour supprimer les entités marquées
 
-### Interaction
+### Interactions
 
-| Action | Result |
-|--------|--------|
-| Click on feature | Highlight + zoom |
-| Double-click feature | Closer zoom |
-| Click on group | Highlight all features in group |
-| Double-click group | Zoom to entire group |
+| Action | Résultat |
+|--------|----------|
+| Clic sur une entité | Surligner + zoom |
+| Double-clic sur une entité | Zoom rapproché |
+| Clic sur un groupe | Surligner toutes les entités du groupe |
+| Double-clic sur un groupe | Zoom sur tout le groupe |
 
-## Requirements
+## Prérequis
 
-- QGIS 3.22 or higher
-- Python 3.9+
+- QGIS 3.22 ou supérieur  
+- Python 3.9 ou supérieur
 
-## Changelog
+## Historique des versions
 
-### 1.2.0 (2025)
-- Renamed from KAT DupliCheck to DupliCheck
-- Fixed zoom for point geometries
-- Removed embedded MapPreview - uses QGIS main canvas
-- Improved highlight and zoom behavior
+### 1.0.0 (2025)
+- Première version publiée  
 
-### 1.1.1
-- Fixed zoom not working for point features
-- Removed deprecated QgsRectangle.setMinimal()
+## Licence
 
-### 1.0.0
-- Initial release
+Licence publique générale GNU v3.0
 
-## License
-
-GNU General Public License v3.0
-
-## Author
+## Auteur
 
 Aziz TRAORE  
-Email: aziz.explorer@gmail.com
+Email : aziz.explorer@gmail.com
 
-## Contributing
+## Contribution
 
-Contributions are welcome! Please feel free to submit issues and pull requests.
+Les contributions sont les bienvenues ! N’hésitez pas à créer des issues ou à proposer des pull requests.
 
 ## Support
 
-For bug reports and feature requests, please use the [GitHub Issues](https://github.com/kaborodev/duplicheck/issues).
->>>>>>> 1960b1d (Initial commit: DupliCheck v1.0.0)
+Pour les rapports de bugs ou demandes de fonctionnalités, utilisez les [Issues GitHub](https://github.com/AzizT-dev/duplicheck/issues).
