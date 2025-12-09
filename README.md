@@ -77,8 +77,6 @@ DupliCheck est un plugin QGIS permettant de détecter et de gérer les entités 
 | ------- | ---------- | ---------------------------------------------------------------------------------------------------- |
 | 1.0.0   | 2025-12-08 | Version initiale        |
 
-### 1.0.0 (2025)
-- Première version publiée  
 
 ## Licence
 
