@@ -120,9 +120,9 @@ Merci aux utilisateurs pour leurs suggestions d'amélioration.
 
 ## 📊 Statistiques du projet
 
-![GitHub stars](https://img.shields.io/github/stars/AzizT-dev/kat_overlap?style=social)
-![GitHub forks](https://img.shields.io/github/forks/AzizT-dev/kat_overlap?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/AzizT-dev/kat_overlap?style=social)
+![GitHub stars](https://img.shields.io/github/stars/AzizT-dev/duplicheck?style=social)
+![GitHub forks](https://img.shields.io/github/forks/AzizT-dev/duplicheck?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/AzizT-dev/duplicheck?style=social)
 
 ---
 
